@@ -24,7 +24,7 @@ namespace HeadsetMultpointSwitcher
             trayIcon = new NotifyIcon
             {
                 Text = "Headset Multipoint Switcher",
-                Icon = new Icon(@"../../untitled.ico"),
+                Icon = new Icon(@"../../icon.ico"),
                 ContextMenu = new ContextMenu(new MenuItem[] {
                     new MenuItem("Switch",changeDevice),
                     new MenuItem("Exit", trayIconExit)
