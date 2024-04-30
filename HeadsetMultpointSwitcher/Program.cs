@@ -15,11 +15,17 @@ namespace HeadsetMultpointSwitcher
 
         static void Main(string[] args)
         {
-            var task = System.Threading.Tasks.Task.Factory.StartNew(() => ShowTrayIcon());
+            var task = System.Threading.Tasks.Task.Factory.StartNew(() => setTrayIcon());
             task.Wait();
         }
 
-        private static void ShowTrayIcon()
+        /*
+         * void setTrayIcon()
+         * IN   : none
+         * OUT  : none
+         * INFO : set tray icon
+         */
+        private static void setTrayIcon()
         {
             trayIcon = new NotifyIcon
             {
@@ -37,13 +43,24 @@ namespace HeadsetMultpointSwitcher
             Application.Run();
         }
 
+        /*
+         * void trayIconExit()
+         * IN   : none
+         * OUT  : none
+         * INFO : when user click Exit in trayIcon's menu
+         */
         static void trayIconExit(object sender, EventArgs e)
         {
             trayIcon.Visible = false;
             Application.Exit();
         }
 
-        //Get defaul device, switch to other device, wait 2s, back to defaul device
+        /*
+         * void changeDevice()
+         * IN   : none
+         * OUT  : none
+         * INFO : Get defaul device, switch to other device, wait 2s, back to defaul device
+         */
         static void changeDevice(object sender, EventArgs e)
         {
             trayIcon.ShowBalloonTip(114514, "Information", "Switching", ToolTipIcon.Info);
@@ -67,6 +84,7 @@ namespace HeadsetMultpointSwitcher
             Thread.Sleep(2000);
             controller.SetDefaultDevice(defaulDevice);
 
+            //hope can work
             devices = null;
             defaulDevice = null;
         }
