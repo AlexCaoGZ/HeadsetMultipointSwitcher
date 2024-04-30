@@ -6,7 +6,7 @@ using AudioSwitcher.AudioApi;
 using AudioSwitcher.AudioApi.CoreAudio;
 using System.Windows.Forms;
 using System.Drawing;
-namespace HeadsetMultpointSwitcher
+namespace HeadsetMultipointSwitcher
 {
     internal class Program
     {

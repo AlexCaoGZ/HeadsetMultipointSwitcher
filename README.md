@@ -1,5 +1,5 @@
-# HeadsetMultpointSwitcher
-**Your headset have to support multpoint connection to use this**
+# HeadsetMultipointSwitcher
+**Your headset have to support multipoint connection to use this**
 
 **你的耳机必须支持多点连接才能使用**
 

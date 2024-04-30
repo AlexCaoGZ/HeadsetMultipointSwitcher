@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D0E9F040-246A-4E5D-8494-B0FC878ED5EF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>HeadsetMultpointSwitcher</RootNamespace>
-    <AssemblyName>HeadsetMultpointSwitcher</AssemblyName>
+    <RootNamespace>HeadsetMultipointSwitcher</RootNamespace>
+    <AssemblyName>HeadsetMultipointSwitcher</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
